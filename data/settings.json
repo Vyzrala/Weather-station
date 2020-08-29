@@ -1,14 +1,14 @@
 {
     "default": {
-        "device_ip": "192.168.52.136",
-        "zabbix_ip": "10.0.10.55",
-        "zabbix_port": 10051,
+        "device_ip": "127.0.0.1",
+        "zabbix_ip": "127.0.0.1",
+        "zabbix_port": 8080,
         "refresh_time": 5,
         "motion_refresh_time": 5
     },
     "custom": {
-        "device_ip": "192.168.52.136",
-        "zabbix_ip": "10.0.10.55",
+        "device_ip": "127.0.0.1",
+        "zabbix_ip": "127.0.0.1",
         "zabbix_port": "10051",
         "refresh_time": "90",
         "motion_refresh_time": "90"
