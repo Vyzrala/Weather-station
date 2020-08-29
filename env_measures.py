@@ -63,8 +63,8 @@ class AppLogic():
 	ipv4_pattern = "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$"
 	digits_pattern = "^[0-9]+$"
 	validators = [ipv4_pattern,  		# device_ip
-				  ipv4_pattern,  		# zabbix_ip
-				  digits_pattern,		# zabbix_port
+				  ipv4_pattern,  		# XXX_ip
+				  digits_pattern,		# XXX_port
 				  digits_pattern, 		# refresh_time
 				  digits_pattern] 		# motion_refresh_time
 
@@ -512,13 +512,10 @@ class GUI(QMainWindow):
 
 
 def main():
-	# ~ try:
 	app = QApplication(sys.argv)
 	main_window = GUI()
 	sys.exit(app.exec_())
-	# ~ except:
-		# ~ print("\nError:\n", sys.exc_info()[0])
-		# ~ os.execv(__file__, sys.argv)  # auto script	restart 
+
 		
 if __name__ == "__main__":
 	main()
